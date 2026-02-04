@@ -14,7 +14,7 @@ st.title("Global Happiness Explorer")
 
 @st.cache_data
 def load_data(path="data/Happy_Updated.csv"):
-    df = pd.read_csv(path, na_values=["", "NA"])
+    df = pd.read_csv(path, na_values=["", "NA"], encoding="latin-1")
     # 清理末尾空行
     df = df.dropna(subset=["Ladder_score","LGDP","Support","HLE","Freedom","Corruption"])
     df['Continent'] = df['Continent'].astype('category')
@@ -76,7 +76,7 @@ else:
 
     model.fit(X_train, y_train)
     preds_test = model.predict(X_test)
-    rmse = mean_squared_error(y_test, preds_test, squared=False)
+    rmse = np.sqrt(mean_squared_error(y_test, preds_test))
     mae = mean_absolute_error(y_test, preds_test)
     r2 = r2_score(y_test, preds_test)
 
