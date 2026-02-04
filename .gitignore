@@ -1,0 +1,21 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Python / Streamlit
+__pycache__/
+venv/
+.env
+
+# renv
+renv/library/
+renv/staging/
+
+# outputs & figures
+figures/
+outputs/
+
+# data (不要把原始数据推到公开仓库，按需)
+data/*.csv
+data/*.xlsx
