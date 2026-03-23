@@ -1,3 +1,9 @@
+# Paper (course assignment - do not publish)
+*.docx
+
+# OS
+.DS_Store
+
 # R
 .Rhistory
 .RData
