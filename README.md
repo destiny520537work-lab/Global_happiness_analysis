@@ -2,7 +2,7 @@
 
 **Exploring Global Patterns in National Happiness: A Multivariate Regression Analysis**
 
-An end-to-end data science project analyzing the social, economic, health, and institutional determinants of national happiness across 146 countries. This work underpins a group research report submitted for *Introduction to Statistics for Data Science* (MATH42715, Durham University, 2025).
+An end-to-end data science project analyzing the social, economic, health, and institutional determinants of national happiness across 146 countries.
 
 ---
 
